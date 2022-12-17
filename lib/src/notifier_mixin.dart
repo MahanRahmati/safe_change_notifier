@@ -5,7 +5,7 @@ import 'package:flutter/foundation.dart';
 ///
 /// ![safe_change_notifier](https://github.com/ubuntu-flutter-community/safe_change_notifier/raw/main/images/safe_change_notifier.png)
 mixin SafeNotifierMixin on ChangeNotifier {
-  var _isDisposed = false;
+  bool _isDisposed = false;
 
   /// Whether the notifier has been disposed.
   bool get isDisposed => _isDisposed;
